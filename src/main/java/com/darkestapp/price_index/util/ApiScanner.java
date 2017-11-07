@@ -91,7 +91,7 @@ public class ApiScanner {
 
         for(Class interfaceElement : interfaces) {
 
-            if(interfaceElement.getSimpleName().equals(PriceIndexApi.class.getSimpleName())) {
+            if(interfaceElement.isAssignableFrom(PriceIndexApi.class)) {
                 return true;
             }
         }
