@@ -56,7 +56,7 @@ public class CurrencyScanner {
                     EXCEPTION_MESSAGE,
                     e,
                     context.getSimpleName(),
-                    "An error has occurred while scanning the Currency Code List");
+                    "An error has occurred while scanning the CoindeskCurrency Code List");
         }
     }
 
