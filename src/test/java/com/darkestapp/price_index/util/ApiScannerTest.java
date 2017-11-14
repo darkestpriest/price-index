@@ -18,6 +18,5 @@ public class ApiScannerTest {
         List<PriceIndexApi> apiList = getAvailableApiList();
         assertNotNull(apiList);
         assertThat((long)apiList.size(), greaterThan(0L));
-        //This test will fail in this version because there is not any PriceIndexApi implemented
     }
 }
