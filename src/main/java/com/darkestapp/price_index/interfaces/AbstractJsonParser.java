@@ -1,6 +1,5 @@
 package com.darkestapp.price_index.interfaces;
 
-import com.darkestapp.price_index.enums.Currency;
 import com.darkestapp.price_index.exceptions.PriceIndexException;
 import org.json.JSONObject;
 
@@ -29,9 +28,9 @@ public abstract class AbstractJsonParser<A extends ApiObject> {
         this.CONTEXT = contextClass.getSimpleName();
     }
 
-    public abstract A getApiObject(Currency currency) throws PriceIndexException;
+    public abstract A getApiObject() throws PriceIndexException;
 
-    public abstract A getApiObject(String url, Currency currency) throws PriceIndexException;
+    public abstract A getApiObject(String url) throws PriceIndexException;
 
     protected JSONObject getRequest(String stringURL) throws PriceIndexException {
 
