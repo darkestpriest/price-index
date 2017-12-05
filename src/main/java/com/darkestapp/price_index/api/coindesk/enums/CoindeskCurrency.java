@@ -10,6 +10,10 @@ import com.darkestapp.price_index.interfaces.Currency;
 public enum CoindeskCurrency implements Currency {
 
     @Supported
+    EUR ("EUR", "Euro"),
+    @Supported
+    GBP ("GBP", "British Pound Sterling"),
+    @Supported
     USD ("USD", "US Dollar");
 
     private String friendlyName;
