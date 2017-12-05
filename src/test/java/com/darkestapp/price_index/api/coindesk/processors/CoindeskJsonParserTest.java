@@ -7,7 +7,8 @@ import org.junit.Test;
 import java.util.HashMap;
 
 import static org.hamcrest.Matchers.greaterThan;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertThat;
 
 /**
  * Created by Manuel Perez P. (darkpriestrelative@gmail.com) on 07/11/17.
