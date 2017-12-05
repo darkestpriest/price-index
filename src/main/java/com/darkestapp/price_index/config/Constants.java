@@ -5,6 +5,10 @@ package com.darkestapp.price_index.config;
  */
 public class Constants {
 
+    private Constants() {
+        //Just to avoid public instantiation.
+    }
+
     //int values
     public static final int DEFAULT_READ_TIMEOUT = 5000;
 

@@ -17,7 +17,6 @@ public class CoindeskJsonParserTest {
     public void getApiObject() throws Exception {
         CoindeskJsonParser c = new CoindeskJsonParser(CoindeskJsonParserTest.class);
         HashMap<CoindeskCurrency, CoindeskPrice> prices = c.getApiObject().getPrices();
-        System.out.println(prices);
         assertNotNull(prices);
         assertThat(prices.size(), greaterThan(0));
     }
