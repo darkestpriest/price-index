@@ -9,6 +9,8 @@ public class CoindeskConstants {
         //Just to avoid public instantiation.
     }
 
+    public static final String API_SHORT_NAME = "CDEX";
+    public static final String API_FRIENDLY_NAME = "Coindesk";
     public static String CHART_NAME = "chartName";
     public static final String CURRENT_PRICE_URL = "https://api.coindesk.com/v1/bpi/currentprice.json";
     public static String DEFAULT_CHART_NAME = "Bitcoin";
