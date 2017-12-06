@@ -45,3 +45,6 @@ $RECYCLE.BIN/
 
 #Idea project
 .idea/
+/.nb-gradle/
+.gradle/
+/build/
