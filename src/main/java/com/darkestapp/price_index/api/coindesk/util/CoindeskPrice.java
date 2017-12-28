@@ -3,6 +3,7 @@ package com.darkestapp.price_index.api.coindesk.util;
 import com.darkestapp.price_index.annotation.Supported;
 import com.darkestapp.price_index.exceptions.ParseException;
 import com.darkestapp.price_index.exceptions.PriceIndexException;
+import com.darkestapp.price_index.interfaces.AbstractPrice;
 import com.darkestapp.price_index.interfaces.Price;
 import com.darkestapp.price_index.util.CurrencyScanner;
 import org.json.JSONObject;
@@ -14,7 +15,7 @@ import java.util.List;
 /**
  * Created by Manuel Perez P. (darkpriestrelative@gmail.com) on 07/11/17.
  */
-public class CoindeskPrice implements Price {
+public class CoindeskPrice extends AbstractPrice {
 
     @Supported
     private String code;
@@ -88,26 +89,6 @@ public class CoindeskPrice implements Price {
                     "Cannot build CoindeskPrice from json response");
         }
 
-    }
-
-    private static void setParameter(
-            String parameter,
-            JSONObject marketPrices,
-            CoindeskPrice price) throws PriceIndexException {
-        Class coindeskPriceClass = price.getClass();
-        try {
-            String value = marketPrices.get(parameter).toString();
-            Method method = price.getClass().getMethod(
-                    "set"+toUpperCaseFirstChar(parameter),
-                    String.class);
-            method.invoke(price, value);
-        } catch (Exception e) {
-            throw new PriceIndexException(
-                    "Parsing error",
-                    e,
-                    coindeskPriceClass.getSimpleName(),
-                    "Cannot get the " + parameter +" from " + marketPrices);
-        }
     }
 
     private static String toUpperCaseFirstChar(String input) {
