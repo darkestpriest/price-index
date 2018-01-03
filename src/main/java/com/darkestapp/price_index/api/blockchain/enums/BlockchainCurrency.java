@@ -4,6 +4,9 @@ import com.darkestapp.price_index.annotation.Supported;
 import com.darkestapp.price_index.exceptions.PriceIndexException;
 import com.darkestapp.price_index.interfaces.Currency;
 
+/**
+ * Created by Manuel Perez P. (darkpriestrelative@gmail.com) on 07/12/17.
+ */
 public enum BlockchainCurrency implements Currency {
 
     @Supported

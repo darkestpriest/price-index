@@ -13,6 +13,9 @@ import java.util.List;
 
 import static com.darkestapp.price_index.api.blockchain.config.BlockchainConstants.RATE_JSON_STRING;
 
+/**
+ * Created by Manuel Perez P. (darkpriestrelative@gmail.com) on 07/12/17.
+ */
 public class BlockchainPrice extends AbstractPrice {
 
     @Supported(value = false)

@@ -15,6 +15,9 @@ import java.util.List;
 
 import static com.darkestapp.price_index.api.blockchain.config.BlockchainConstants.CURRENT_PRICE_URL;
 
+/**
+ * Created by Manuel Perez P. (darkpriestrelative@gmail.com) on 07/12/17.
+ */
 public class BlockchainJsonParser extends AbstractJsonParser<BlockchainObject> {
 
     public BlockchainJsonParser(Class contextClass) {
