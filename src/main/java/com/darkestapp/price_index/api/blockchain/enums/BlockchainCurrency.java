@@ -11,26 +11,47 @@ public enum BlockchainCurrency implements Currency {
 
     @Supported
     USD ("USD", "US Dollar"),
+    @Supported
     AUD ("AUD", "Australia Dollar"),
+    @Supported
     BRL ("BRL", "Brazil Real"),
+    @Supported
     CAD ("CAD", "Canada Dollar"),
+    @Supported
     CHF ("CHF", "Swiss Franc"),
+    @Supported
     CLP ("CLP", "Chile Peso"),
+    @Supported
     CNY ("CNY", "China Yuan"),
+    @Supported
     DKK ("DKK", "Denmark Krone"),
+    @Supported
     EUR ("EUR", "Euro"),
+    @Supported
     GBP ("GBP", "British Pound"),
+    @Supported
     HKD ("HKD", "Hong Kong Dollar"),
+    @Supported
     INR ("INR", "India Rupee"),
+    @Supported
     ISK ("ISK", "Iceland Krona"),
+    @Supported
     JPY ("JPY", "Japanese Yen"),
+    @Supported
     KRW ("KRW", "South Korean Won"),
+    @Supported
     NZD ("NZD", "New Zealand Dollar"),
+    @Supported
     PLN ("PLN", "Polish Zloty"),
+    @Supported
     RUB ("RUB", "Russian Rouble"),
+    @Supported
     SEK ("SEK", "Swedish Krona"),
+    @Supported
     SGD ("SGD", "Singapore Dollar"),
+    @Supported
     THB ("THB", "Thailand Baht"),
+    @Supported
     TWD ("TWD", "Taiwan New Dollar")
     ;
 
