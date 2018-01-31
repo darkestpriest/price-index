@@ -16,3 +16,5 @@ For Maven users:
   <type>pom</type> 
 </dependency>
 ```
+
+Also available at: https://dl.bintray.com/darkestpriest/price-index
