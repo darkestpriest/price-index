@@ -10,7 +10,29 @@ import com.darkestapp.price_index.interfaces.Currency;
 public enum BlockchainCurrency implements Currency {
 
     @Supported
-    USD ("USD", "US Dollar");
+    USD ("USD", "US Dollar"),
+    AUD ("AUD", "Australia Dollar"),
+    BRL ("BRL", "Brazil Real"),
+    CAD ("CAD", "Canada Dollar"),
+    CHF ("CHF", "Swiss Franc"),
+    CLP ("CLP", "Chile Peso"),
+    CNY ("CNY", "China Yuan"),
+    DKK ("DKK", "Denmark Krone"),
+    EUR ("EUR", "Euro"),
+    GBP ("GBP", "British Pound"),
+    HKD ("HKD", "Hong Kong Dollar"),
+    INR ("INR", "India Rupee"),
+    ISK ("ISK", "Iceland Krona"),
+    JPY ("JPY", "Japanese Yen"),
+    KRW ("KRW", "South Korean Won"),
+    NZD ("NZD", "New Zealand Dollar"),
+    PLN ("PLN", "Polish Zloty"),
+    RUB ("RUB", "Russian Rouble"),
+    SEK ("SEK", "Swedish Krona"),
+    SGD ("SGD", "Singapore Dollar"),
+    THB ("THB", "Thailand Baht"),
+    TWD ("TWD", "Taiwan New Dollar")
+    ;
 
     private String code;
     private String friendlyName;
